@@ -16,4 +16,16 @@ def get_random(ini, fim):
     :param fim: fim do intervalo
     :return: número aleatório
     """
+
     return random.randrange(ini, fim + 1)
+
+
+if __name__ == '__main__':
+    num_ini = int(input('Qual é o número inicial? '))
+    num_end = int(input('Qual é o número final? '))
+    opcao = int(input('Qual é a opção (1 - pares, 2 = impares, 3 - primos)'))
+
+    for x in range(num_ini, num_end + 1):
+        print(f'{get_random(num_ini, num_end)}', end=' ')
+
+    if opcao
