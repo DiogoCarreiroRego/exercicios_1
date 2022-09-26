@@ -20,6 +20,11 @@ def get_random(ini, fim):
     return random.randrange(ini, fim + 1)
 
 
+def par(num):
+    if num % 2 == 0:
+        return num
+
+
 if __name__ == '__main__':
     num_ini = int(input('Qual é o número inicial? '))
     num_end = int(input('Qual é o número final? '))
@@ -27,5 +32,3 @@ if __name__ == '__main__':
 
     for x in range(num_ini, num_end + 1):
         print(f'{get_random(num_ini, num_end)}', end=' ')
-
-    if opcao
