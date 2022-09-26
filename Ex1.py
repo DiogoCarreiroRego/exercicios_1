@@ -11,25 +11,21 @@ Após o utilizador ter inserido os 5 valores apresente:
 
 
 if __name__ == '__main__':
-    vendas_grupo_central = []
-    nomes_ilhas_grupo_central = []
-    soma = 0
+  vendas_grupo_central = []
+  nome_ilhas_grupo_central = []
+  valores = 5
 
-    for x in range(0, 5):
-        num = int(input(f'Qual é o número de vendas? '))
-        #nome = str(input(f'Qual é o nome da ilha? '))
+  for x in range(0, valores):
+    num_vendas = int(input(f'Qual é o {x + 1}º número de vendas? '))
+    nome_ilha = str(input(f'Qual é a ilha do grupo central? '))
 
-        soma = soma + num
+    vendas_grupo_central.insert(x, num_vendas)
+    nome_ilhas_grupo_central.insert(x, nome_ilha)
 
-        vendas_grupo_central.insert(x, num)
-        #nomes_ilhas_grupo_central.insert(x, nome)
-
-    for x in vendas_grupo_central:
-        print(x, end=' ')
-    print('')
-    #for x in nomes_ilhas_grupo_central:
-        #print(x, end=' ')
-
-    print(soma)
-    #venda(num)
+  print(f'\nVendas - {vendas_grupo_central}')
+  print(f'Ilhas - {nome_ilhas_grupo_central}')
+  print(f'Total de vendas é {sum(vendas_grupo_central)}')
+  print(f'Menor vendas foi {min(vendas_grupo_central)}')
+  print(f'Maior vendas foi {max(vendas_grupo_central)}')
+  print(f'Média de vendas foi {sum(vendas_grupo_central) / len(vendas_grupo_central)}')
 
