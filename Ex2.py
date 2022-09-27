@@ -9,7 +9,8 @@ Após o utilizador ter inderido a frase apresente:
  - Quantos numeros tem a frase
  - Apresente a frase invertida. Exemplo: A frase é 'Bom dia!' deve dar '!aid moB'
 """
-import re
+
+
 if __name__ == '__main__':
     frase_list = []
     frase = str(input('Digite uma frase: '))
