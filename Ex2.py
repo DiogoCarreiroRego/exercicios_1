@@ -45,3 +45,4 @@ if __name__ == '__main__':
     for i in reversed(frase):
         reversed_frase += i
     print(f'A é frase escrita quanto invertida fica "{reversed_frase}"')
+    print(f'A é frase escrita quanto invertida fica "{frase[::-1]}"')
