@@ -30,11 +30,12 @@ if __name__ == '__main__':
     for x in range(0, len(vendas)):
         if x <= menor_num:
             menor_num = vendas[x]
+
         if x > maior_num:
             maior_num = vendas[x]
 
-        #print(f'Menor vendas = {menor_num} da ilha {ilhas[comp]}')
-        print(f'Maior venda = {maior_num}')
+        print(f'Menor vendas = {menor_num} da ilha {ilhas[comp]}')
+        #print(f'Maior venda = {maior_num}')
         comp += 1
 
 
