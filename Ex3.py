@@ -53,6 +53,7 @@ if __name__ == '__main__':
         list_random_impar.insert(x, num_random)
 
     elif opcao == 3:
+      # A parte dos números primos não está correta
       if impar(num_random):
         list_random_primo.insert(x, num_random)
 
