@@ -22,11 +22,11 @@ if __name__ == '__main__':
     num_vogais = 0
     num_numbers = 0
     for x in range(len(frase)):
-        if (frase[x].islower()):
+        if frase[x].islower():
             num_min += 1
-        elif (frase[x].isupper()):
+        elif frase[x].isupper():
             num_mai += 1
-        elif (frase[x].isdigit()):
+        elif frase[x].isdigit():
             num_numbers += 1
         if frase[x] == 'a' or frase[x] == 'e' or frase[x] == 'i' or frase[x] == 'o' or frase[x] == 'u' or frase[x] == 'A' or frase[x] == 'E' or frase[x] == 'I' or frase[x] == 'O' or frase[x] == 'U':
             num_vogais += 1
