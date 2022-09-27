@@ -1,6 +1,7 @@
 """
 Complete o programa
 
+# Perguntar ao utilizador quantos números quer
 Pergunte ao utilizador qual é o intervalo para obter numeros aleatórios
 Pergunte se deseja ver apenas pares, apenas impares ou apenas primos
 Mostre todos os números aleatórios
