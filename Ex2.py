@@ -19,11 +19,14 @@ if __name__ == '__main__':
     num_mai = 0
     num_min = 0
     num_vogais = 0
+    num_numbers = 0
     for x in range(len(frase)):
         if (frase[x].islower()):
             num_min += 1
         elif (frase[x].isupper()):
             num_mai += 1
+        elif (frase[x].isdigit()):
+            num_numbers += 1
         if frase[x] == 'a' or frase[x] == 'e' or frase[x] == 'i' or frase[x] == 'o' or frase[x] == 'u' or frase[x] == 'A' or frase[x] == 'E' or frase[x] == 'I' or frase[x] == 'O' or frase[x] == 'U':
             num_vogais += 1
 
@@ -35,6 +38,7 @@ if __name__ == '__main__':
     print(f'A frase contém {num_letras} letras')
     print(f'A frase contém {num_vogais} vogais')
     print(f'A frase contém {num_consoantes} consoantes')
+    print(f'A frase contém {num_numbers} números')
     print(f'A frase contém {num_mai} letras maiusculas')
     print(f'A frase contém {num_min} letras minusculas')
     reversed_frase = ''
