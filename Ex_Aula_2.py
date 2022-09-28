@@ -40,10 +40,9 @@ if __name__ == '__main__':
                 num2 += 1
                 print(f'Total = {comwhile(num1, num2)}')
 
-            continuar = input('Deseja continuar (n or s?')
+            continuar = input('Deseja continuar (n or s? ')
             if continuar == 'n':
                 break
 
         except ValueError:
             print('Digite um valor inteiro!')
-
