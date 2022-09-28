@@ -57,7 +57,7 @@ if __name__ == '__main__':
     print(f'b = {len(vendas[0])}')
 
     # Total de vendas
-    total = 0
+    """total = 0
     for x in range(len(vendas)):
         total_linhas = 0
         for y in range(len(vendas[0])):
@@ -65,4 +65,13 @@ if __name__ == '__main__':
             total += vendas[x][y]
             total_linhas += vendas[x][y]
         print(f'Total de linhas {total_linhas}')
-    print(f'Total de vendas {total}')
+    print(f'Total de vendas {total}')"""
+
+    # Incompleto
+    total_ilha = 0
+    for y in range(len(vendas[0])):
+        a = 0
+        for x in range(len(vendas)):
+            total_ilha += vendas[x][a]
+            a += 1
+        print(f'{total_ilha}')
