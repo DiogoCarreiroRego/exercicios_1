@@ -1,6 +1,9 @@
 """
-a
 
+- Total das vendas
+- O total de vendas de gasolina
+- O total de vendas de gasóleo
+- O total de vendas para cada ilha
 """
 
 if __name__ == '__main__':
