@@ -30,31 +30,37 @@ Exemplo da estrutura de armazenamento das vendas:
 """
 
 if __name__ == '__main__':
+    ilhas = ['TER', 'PIC', 'FAI', 'GRA', 'SJR']
+    tipos = ['Gasolina', 'Gasoleo']
     vendas = [
-        [10, 20, 30, 40, 50], # 0
-        [15, 25, 35, 45, 55]  # 1
+        [10, 20, 30, 40, 50], # 0   Gasolina
+        [15, 25, 35, 45, 55]  # 1   Gasoleo
     ]
 
     print(vendas)
+    """
     for x in vendas:
         print(x)
         for y in x:
             print(y)
-
+    """
+    """
     x = 0
     y = 4
     print(f'Vendas[0][0] = {vendas[x][y]}')
+    """
 
     """for x in range(2):
         for y in range(5):
             print(f'{[x]}{[y]} {vendas[x][y]}')"""
-
+    """
     for x in range(len(vendas)):
         for y in range(len(vendas[0])):
             print(f'{[x]}{[y]} {vendas[x][y]}')
 
     print(f'a = {len(vendas)}')
     print(f'b = {len(vendas[0])}')
+    """
 
     print('')
     # Total de vendas
@@ -65,7 +71,7 @@ if __name__ == '__main__':
             #print(f'{[x]}{[y]} {vendas[x][y]}')
             total += vendas[x][y]
             total_linhas += vendas[x][y]
-        print(f'Total de linha = {total_linhas}')
+        print(f'Total de {tipos[x]} = {total_linhas}')
     #print(f'Total de vendas {total}')
 
     # Soma por ilha, Incompleto
@@ -85,5 +91,5 @@ if __name__ == '__main__':
             #print(f'{[x]}{[y]} = {vendas[x][y]}')
             total += vendas[x][y]
             total_ilhas += vendas[x][y]
-        print(f'Total por ilha = {total_ilhas}')
+        print(f'Total na {ilhas[y]} = {total_ilhas}')
     print(f'Total = {total}')
