@@ -77,7 +77,7 @@ if __name__ == '__main__':
             a += 1
         print(f'{total_ilha}')"""
 
-    # Soma por ilh, Completo
+    # Soma por ilha, Completo
     total = 0
     for y in range(len(vendas[0])):
         total_ilhas = 0
