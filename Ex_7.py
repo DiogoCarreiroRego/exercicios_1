@@ -56,16 +56,17 @@ if __name__ == '__main__':
     print(f'a = {len(vendas)}')
     print(f'b = {len(vendas[0])}')
 
+    print('')
     # Total de vendas
-    """total = 0
+    total = 0
     for x in range(len(vendas)):
         total_linhas = 0
         for y in range(len(vendas[0])):
-            print(f'{[x]}{[y]} {vendas[x][y]}')
+            #print(f'{[x]}{[y]} {vendas[x][y]}')
             total += vendas[x][y]
             total_linhas += vendas[x][y]
-        print(f'Total de linhas {total_linhas}')
-    print(f'Total de vendas {total}')"""
+        print(f'Total de linha = {total_linhas}')
+    #print(f'Total de vendas {total}')
 
     # Soma por ilha, Incompleto
     """total_ilha = 0
@@ -77,12 +78,11 @@ if __name__ == '__main__':
         print(f'{total_ilha}')"""
 
     # Soma por ilh, Completo
-    print('')
     total = 0
     for y in range(len(vendas[0])):
         total_ilhas = 0
         for x in range(len(vendas)):
-            print(f'{[x]}{[y]} = {vendas[x][y]}')
+            #print(f'{[x]}{[y]} = {vendas[x][y]}')
             total += vendas[x][y]
             total_ilhas += vendas[x][y]
         print(f'Total por ilha = {total_ilhas}')
