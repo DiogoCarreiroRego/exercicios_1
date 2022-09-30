@@ -22,8 +22,22 @@ if __name__ == '__main__':
                     stars[x] = numero
                     break
 
-        nums.sort(key=int)
-        stars.sort(key=int)
+        # Exemplo com 'sort' para ordenar o que tem na lista
+        #nums.sort(key=int)
+        #stars.sort(key=int)
+
+        # Não funcionado
+        """
+        troquei = True
+        nums_or = [0, 0, 0, 0, 0]
+        while troquei:
+            troquei = False
+            for x in range(4):
+                if nums[x] > nums[x + 1]:
+                    troquei = True
+        """
+
+
         print(f'{a}º Numbers = {nums}')
-        print(f'{a}º Stars = {stars}')
+        #print(f'{a}º Stars = {stars}')
 
